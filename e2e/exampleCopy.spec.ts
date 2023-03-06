@@ -13,4 +13,6 @@ test('github link', async ({ page }) => {
   // Click the get started link.
   await expect(page.getByRole('link',{ name: '48k+ stargazers on GitHub' })).toBeTruthy();
 
+  await expect(page).toHaveScreenshot();
+
 });
